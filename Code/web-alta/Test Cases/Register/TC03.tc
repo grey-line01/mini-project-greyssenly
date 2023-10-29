@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC03</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>84b05dac-4784-461e-b239-d493015402b5</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>95d99fda-5ae0-4e61-bc04-7a84bf4defbb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a90f0e3f-5ad4-4684-a3a7-fe298d71b1e8</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8cc44d52-6570-415e-948c-549b30d03cd7</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'user12345'</defaultValue>
+      <description></description>
+      <id>95d99fda-5ae0-4e61-bc04-7a84bf4defbb</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a90f0e3f-5ad4-4684-a3a7-fe298d71b1e8</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'password123'</defaultValue>
+      <description></description>
+      <id>8cc44d52-6570-415e-948c-549b30d03cd7</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

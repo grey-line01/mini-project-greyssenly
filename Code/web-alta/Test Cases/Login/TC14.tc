@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC14</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>84833083-65aa-4f21-bf0c-a52619637919</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7d52340d-8bc4-49de-a38f-7edefba1c38d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8a6546aa-055a-4d26-bac3-c5974248c2b6</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'lala@gmail.com'</defaultValue>
+      <description></description>
+      <id>7d52340d-8bc4-49de-a38f-7edefba1c38d</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'lala123'</defaultValue>
+      <description></description>
+      <id>8a6546aa-055a-4d26-bac3-c5974248c2b6</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

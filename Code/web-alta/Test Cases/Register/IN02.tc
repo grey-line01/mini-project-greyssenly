@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IN02</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5123512e-b314-41c8-a0cc-885e54248db6</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>77ccb2fd-5b80-4282-b141-c47863ab754f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>32367e1e-80a3-4279-a90b-151bc4b2776c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c669ea2a-50a3-47f8-8f13-923c49b58770</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'user12345'</defaultValue>
+      <description></description>
+      <id>77ccb2fd-5b80-4282-b141-c47863ab754f</id>
+      <masked>false</masked>
+      <name>name</name>
+   </variable>
+   <variable>
+      <defaultValue>'akuntestares01+12345@gmail.com'</defaultValue>
+      <description></description>
+      <id>32367e1e-80a3-4279-a90b-151bc4b2776c</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>'Password123\r\n'</defaultValue>
+      <description></description>
+      <id>c669ea2a-50a3-47f8-8f13-923c49b58770</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

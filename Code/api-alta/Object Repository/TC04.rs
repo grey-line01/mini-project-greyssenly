@@ -68,6 +68,7 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-</verificationScript>
+
+WS.verifyElementPropertyValue(response, 'error', &quot;fullname is required&quot;)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

@@ -44,15 +44,15 @@ import cucumber.api.java.en.When
 
 
 class AuthenticationSteps {
-	/////////////tc10
-	
+	/////////////tc01
+
 	ResponseObject response
-	
-	@Given("the API request for TC10 is sent")
-	def sendRequestAndVerify_TC10() {
-		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC10'))
+
+	@Given("the API request for TC01 is sent")
+	def sendRequestAndVerify_TC01() {
+		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC01'))
 	}
-	
+
 
 	@When("the response status code should be verified")
 	def verifyResponseStatusCode() {
@@ -63,31 +63,75 @@ class AuthenticationSteps {
 			println("Response Status: " + responseStatusCode)
 		}
 	}
-	
+
 
 	@Then("the response body should contain the expected error message")
 	def verifyResponseBody() {
-	    def responseBody = response.getResponseBodyContent()
-		    if (responseBody.contains('email is required')) {
-	        println("Response contains the expected error message: 'email is required'")
-		    } else if (responseBody.contains('password is required')) {
-		        println("Response contains the expected error message: 'password is required'")
-		    } else if (responseBody.contains('email or password is invalid')) {
-		        println("Response contains the expected error message: 'email or password is invalid'")
-		    } else {
-		        println("Response does not contain the expected error message")
-		    }
+		def responseBody = response.getResponseBodyContent()
+		if (responseBody.contains('email is required')) {
+			println("Response contains the expected error message: 'email is required'")
+		} else if (responseBody.contains('password is required')) {
+			println("Response contains the expected error message: 'password is required'")
+		} else if (responseBody.contains('email or password is invalid')) {
+			println("Response contains the expected error message: 'email or password is invalid'")
+		} else {
+			println("Response does not contain the expected error message")
+		}
 	}
 
-	
 
+	/////////////tc02
+	
+		@Given("the API request for TC02 is sent")
+		def sendRequestAndVerify_TC02() {
+			response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC02'))
+		}
+		
+	/////////////tc03
+		
+		@Given("the API request for TC03 is sent")
+		def sendRequestAndVerify_TC03() {
+			response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC03'))
+		}
+			
+		/////////////tc04
+			
+		@Given("the API request for TC04 is sent")
+		def sendRequestAndVerify_TC04() {
+				response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC04'))
+		}
+		
+		/////////////tc08
+		
+		@Given("the API request for TC08 is sent")
+		def sendRequestAndVerify_TC08() {
+			response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC08'))
+	    }
+		
+		/////////////tc09
+		
+		@Given("the API request for TC09 is sent")
+		def sendRequestAndVerify_TC09() {
+			response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC09'))
+		}
+		
+		/////////////tc10
+		
+		@Given("the API request for TC10 is sent")
+		def sendRequestAndVerify_TC10() {
+			response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC10'))
+		}
+				
+		
+		
+		
 	/////////////tc11
 
 	@Given("the API request for TC11 is sent")
 	def sendRequestAndVerify_TC11() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC11'))
 	}
-	
+
 
 
 
@@ -97,7 +141,7 @@ class AuthenticationSteps {
 	def sendRequestAndVerify_TC12() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC12'))
 	}
-	
+
 
 	/////////////tc13
 
@@ -105,7 +149,7 @@ class AuthenticationSteps {
 	def sendRequestAndVerify_TC13() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC13'))
 	}
-	
+
 	/////////////tc14
 
 	@Given("the API request for TC14 is sent")
@@ -120,7 +164,7 @@ class AuthenticationSteps {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC15'))
 	}
 
-	
+
 	/////////////tc16
 
 	@Given("the API request for TC16 is sent")
@@ -140,7 +184,7 @@ class AuthenticationSteps {
 	def sendRequestAndVerify_TC18() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC18'))
 	}
-	
+
 
 
 }

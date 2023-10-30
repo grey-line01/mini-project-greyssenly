@@ -2,6 +2,47 @@
 Feature: Authentication
   As a user, I want to authentication so that I can access the shopping page
 
+@tc-01
+  Scenario: Verify  user is not able to login with all empty entries
+    Given the API request for TC01 is sent
+    When the response status code should be verified
+    Then the response body should contain the expected error message
+    
+    @tc-02
+  Scenario: Verify  user is not able to login with all empty entries
+    Given the API request for TC02 is sent
+    When the response status code should be verified
+    Then the response body should contain the expected error message
+    
+    @tc-03
+  Scenario: Verify  user is not able to login with all empty entries
+    Given the API request for TC03 is sent
+    When the response status code should be verified
+    Then the response body should contain the expected error message
+    
+    @tc-04
+  Scenario: Verify  user is not able to login with all empty entries
+    Given the API request for TC04 is sent
+    When the response status code should be verified
+    Then the response body should contain the expected error message
+    
+    @tc-08
+  Scenario: Verify  user is not able to login with all empty entries
+    Given the API request for TC08 is sent
+    When the response status code should be verified
+    Then the response body should contain the expected error message
+    
+    @tc-09
+  Scenario: Verify  user is not able to login with all empty entries
+    Given the API request for TC09 is sent
+    When the response status code should be verified
+    Then the response body should contain the expected error message
+    
+    @tc-10
+  Scenario: Verify  user is not able to login with all empty entries
+    Given the API request for TC10 is sent
+    When the response status code should be verified
+    Then the response body should contain the expected error message
   @tc-10
   Scenario: Verify  user is not able to login with all empty entries
     Given the API request for TC10 is sent

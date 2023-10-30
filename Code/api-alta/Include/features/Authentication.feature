@@ -37,12 +37,7 @@ Feature: Authentication
     Given the API request for TC09 is sent
     When the response status code should be verified
     Then the response body should contain the expected error message
-    
-    @tc-10
-  Scenario: Verify  user is not able to login with all empty entries
-    Given the API request for TC10 is sent
-    When the response status code should be verified
-    Then the response body should contain the expected error message
+  
   @tc-10
   Scenario: Verify  user is not able to login with all empty entries
     Given the API request for TC10 is sent

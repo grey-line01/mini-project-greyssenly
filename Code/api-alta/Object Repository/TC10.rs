@@ -67,6 +67,8 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-WS.verifyElementPropertyValue(response, 'error', &quot;email is required&quot;)</verificationScript>
+
+
+WS.verifyElementPropertyValue(response, 'error', &quot;password is required&quot;)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

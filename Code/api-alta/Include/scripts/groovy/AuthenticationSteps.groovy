@@ -81,50 +81,50 @@ class AuthenticationSteps {
 
 
 	/////////////tc02
-	
-		@Given("the API request for TC02 is sent")
-		def sendRequestAndVerify_TC02() {
-			response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC02'))
-		}
-		
+
+	@Given("the API request for TC02 is sent")
+	def sendRequestAndVerify_TC02() {
+		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC02'))
+	}
+
 	/////////////tc03
-		
-		@Given("the API request for TC03 is sent")
-		def sendRequestAndVerify_TC03() {
-			response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC03'))
-		}
-			
-		/////////////tc04
-			
-		@Given("the API request for TC04 is sent")
-		def sendRequestAndVerify_TC04() {
-				response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC04'))
-		}
-		
-		/////////////tc08
-		
-		@Given("the API request for TC08 is sent")
-		def sendRequestAndVerify_TC08() {
-			response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC08'))
-	    }
-		
-		/////////////tc09
-		
-		@Given("the API request for TC09 is sent")
-		def sendRequestAndVerify_TC09() {
-			response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC09'))
-		}
-		
-		/////////////tc10
-		
-		@Given("the API request for TC10 is sent")
-		def sendRequestAndVerify_TC10() {
-			response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC10'))
-		}
-				
-		
-		
-		
+
+	@Given("the API request for TC03 is sent")
+	def sendRequestAndVerify_TC03() {
+		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC03'))
+	}
+
+	/////////////tc04
+
+	@Given("the API request for TC04 is sent")
+	def sendRequestAndVerify_TC04() {
+		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC04'))
+	}
+
+	/////////////tc08
+
+	@Given("the API request for TC08 is sent")
+	def sendRequestAndVerify_TC08() {
+		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC08'))
+	}
+
+	/////////////tc09
+
+	@Given("the API request for TC09 is sent")
+	def sendRequestAndVerify_TC09() {
+		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC09'))
+	}
+
+	/////////////tc10
+
+	@Given("the API request for TC10 is sent")
+	def sendRequestAndVerify_TC10() {
+		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC10'))
+	}
+
+
+
+
 	/////////////tc11
 
 	@Given("the API request for TC11 is sent")

@@ -45,12 +45,12 @@ import cucumber.api.java.en.When
 
 class ProductCategoriesSteps {
 	ResponseObject response
-	
+
 	@Given("the API request for TC19 is sent")
 	def sendRequestAndVerify_TC19() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC19'))
 	}
-	
+
 
 	@When("the response status code should be showed")
 	def verifyResponseStatusCode() {
@@ -61,20 +61,20 @@ class ProductCategoriesSteps {
 			println("Response Status: " + responseStatusCode)
 		}
 	}
-	
+
 
 	@Then("The expected error message should be present within the response body")
 	def verifyResponseBody() {
 		def responseBody = response.getResponseBodyContent()
-			if (responseBody.contains('email is required')) {
+		if (responseBody.contains('email is required')) {
 			println("Response contains the expected error message: 'email is required'")
-			} else if (responseBody.contains('password is required')) {
-				println("Response contains the expected error message: 'password is required'")
-			} else if (responseBody.contains('email or password is invalid')) {
-				println("Response contains the expected error message: 'email or password is invalid'")
-			} else {
-				println("Response does not contain the expected error message")
-			}
+		} else if (responseBody.contains('password is required')) {
+			println("Response contains the expected error message: 'password is required'")
+		} else if (responseBody.contains('email or password is invalid')) {
+			println("Response contains the expected error message: 'email or password is invalid'")
+		} else {
+			println("Response does not contain the expected error message")
+		}
 	}
 
 	//////////tc20
@@ -83,75 +83,75 @@ class ProductCategoriesSteps {
 	def sendRequestAndVerify_TC20() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC20'))
 	}
-	
+
 	//////////tc21
-	
+
 	@Given("the API request for TC21 is sent")
 	def sendRequestAndVerify_TC21() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC21'))
 	}
-	
+
 
 	//////////tc22
-	
+
 	@Given("the API request for TC22 is sent")
 	def sendRequestAndVerify_TC22() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC22'))
 	}
-	
-	
+
+
 	//////////tc23
-	
+
 	@Given("the API request for TC23 is sent")
 	def sendRequestAndVerify_TC23() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC23'))
 	}
-	
-	
+
+
 	//////////tc24
-	
+
 	@Given("the API request for TC24 is sent")
 	def sendRequestAndVerify_TC24() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC24'))
 	}
-	
-	
-	
+
+
+
 	//////////tc25
-	
+
 	@Given("the API request for TC25 is sent")
 	def sendRequestAndVerify_TC25() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC25'))
 	}
-	
-	
+
+
 	//////////tc26
-	
+
 	@Given("the API request for TC26 is sent")
 	def sendRequestAndVerify_TC26() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC26'))
 	}
-	
-	
+
+
 	//////////tc27
-	
+
 	@Given("the API request for TC27 is sent")
 	def sendRequestAndVerify_TC27() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC27'))
 	}
-	
+
 	//////////tc28
-	
+
 	@Given("the API request for TC28 is sent")
 	def sendRequestAndVerify_TC28() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC28'))
 	}
-	
+
 	//////////tc29
-	
+
 	@Given("the API request for TC29 is sent")
 	def sendRequestAndVerify_TC29() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC29'))
 	}
-	
+
 }

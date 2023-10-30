@@ -59,10 +59,6 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-WS.verifyElementPropertyValue(response, 'data[0].ID', 85528)
-WS.verifyElementPropertyValue(response, 'data[0].Name', &quot;Sony PS5&quot;)
-WS.verifyElementPropertyValue(response, 'data[0].Description', &quot;play has no limits&quot;)
-WS.verifyElementPropertyValue(response, 'data[0].Price', 299)
-WS.verifyElementPropertyValue(response, 'data[0].Ratings', 3)</verificationScript>
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

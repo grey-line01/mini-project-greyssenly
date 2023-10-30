@@ -45,14 +45,14 @@ import cucumber.api.java.en.When
 
 class OrdersSteps {
 	/////////////tc42
-	
+
 	ResponseObject response
-	
+
 	@Given("the API request for TC42 is sent")
 	def sendRequestAndVerify_TC42() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC42'))
 	}
-	
+
 
 	@When("the response status code should be appeared")
 	def verifyResponseStatusCode() {
@@ -63,23 +63,23 @@ class OrdersSteps {
 			println("Response Status: " + responseStatusCode)
 		}
 	}
-	
+
 
 	@Then("expected error message")
 	def verifyResponseBody() {
 		def responseBody = response.getResponseBodyContent()
-			if (responseBody.contains('email is required')) {
+		if (responseBody.contains('email is required')) {
 			println("Response contains the expected error message: 'email is required'")
-			} else if (responseBody.contains('password is required')) {
-				println("Response contains the expected error message: 'password is required'")
-			} else if (responseBody.contains('email or password is invalid')) {
-				println("Response contains the expected error message: 'email or password is invalid'")
-			} else {
-				println("Response does not contain the expected error message")
-			}
+		} else if (responseBody.contains('password is required')) {
+			println("Response contains the expected error message: 'password is required'")
+		} else if (responseBody.contains('email or password is invalid')) {
+			println("Response contains the expected error message: 'email or password is invalid'")
+		} else {
+			println("Response does not contain the expected error message")
+		}
 	}
 
-	
+
 
 	/////////////tc43
 
@@ -87,42 +87,42 @@ class OrdersSteps {
 	def sendRequestAndVerify_TC43() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC43'))
 	}
-	
-	
+
+
 	/////////////tc44
 
 	@Given("the API request for TC44 is sent")
 	def sendRequestAndVerify_TC44() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC44'))
 	}
-	
+
 	/////////////tc45
-	
+
 	@Given("the API request for TC45 is sent")
 	def sendRequestAndVerify_TC45() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC45'))
 	}
-	
+
 	/////////////tc46
-	
+
 	@Given("the API request for TC46 is sent")
 	def sendRequestAndVerify_TC46() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC46'))
 	}
-	
+
 	/////////////tc47
-	
+
 	@Given("the API request for TC47 is sent")
 	def sendRequestAndVerify_TC47() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC47'))
 	}
-	
+
 	/////////////tc48
-	
+
 	@Given("the API request for TC48 is sent")
 	def sendRequestAndVerify_TC48() {
 		response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC48'))
 	}
-		
-	
+
+
 }

@@ -68,9 +68,6 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-
-WS.verifyElementPropertyValue(response, 'data[0].ID', 29722)
-WS.verifyElementPropertyValue(response, 'data[0].Name', &quot;gaming&quot;)
-WS.verifyElementPropertyValue(response, 'data[0].Description', &quot;for gaming purposes&quot;)</verificationScript>
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

@@ -26,18 +26,22 @@ ResponseObject response = WS.sendRequestAndVerify(findTestObject('Object Reposit
 def responseStatusCode = response.getStatusCode()
 
 // Verify the HTTP status code
-if (responseStatusCode == 200) {
-    println("Response Status: OK - 200")
-} else {
-    println("Response Status: " + responseStatusCode)
-}
+		if (responseStatusCode == 200) {
+		    println("Response Status: OK - 200")
+		} else {
+		    println("Response Status: " + responseStatusCode)
+		}
 
 // Verify the response body
 def responseBody = response.getResponseBodyContent()
-if (responseBody.contains('email is required')) {
-    println("Response contains the expected error message: 'email is required'")
-} else {
-    println("Response does not contain the expected error message")
-}
+	if (responseBody.contains('email is required')) {
+			println("Response contains the expected error message: 'email is required'")
+		} else if (responseBody.contains('password is required')) {
+			println("Response contains the expected error message: 'password is required'")
+		} else if (responseBody.contains('email or password is invalid')) {
+			println("Response contains the expected error message: 'email or password is invalid'")
+		} else {
+			println("Response does not contain the expected error message")
+		}
 
 

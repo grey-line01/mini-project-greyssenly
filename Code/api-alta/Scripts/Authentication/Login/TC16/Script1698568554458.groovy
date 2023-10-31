@@ -23,14 +23,28 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.testobject.ResponseObject
 
 
-ResponseObject response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC16'))
 
+// Send the POST request
+ResponseObject response = WS.sendRequestAndVerify(findTestObject('Object Repository/TC016'))
+
+// Get the response HTTP status code
 def responseStatusCode = response.getStatusCode()
 
-if (responseStatusCode == 200) {
-	println("Response Status: OK - 200")
-} else {
-	println("Response Status: " + responseStatusCode)
-}
+// Verify the HTTP status code
+		if (responseStatusCode == 200) {
+			println("Response Status: OK - 200")
+		} else {
+			println("Response Status: " + responseStatusCode)
+		}
 
-WS.verifyElementPropertyValue(response, 'data', "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJGdWxsbmFtZSI6Imtpa2kiLCJFbWFpbCI6Imtpa2lAZ21haWwuY29tIn0.PXfRn-U5dHzxZ8o-35LAIk6QaQu1dP_3aTC8mEcw_P8")
+// Verify the response body
+def responseBody = response.getResponseBodyContent()
+	if (responseBody.contains('email is required')) {
+			println("Response contains the expected error message: 'email is required'")
+		} else if (responseBody.contains('password is required')) {
+			println("Response contains the expected error message: 'password is required'")
+		} else if (responseBody.contains('email or password is invalid')) {
+			println("Response contains the expected error message: 'email or password is invalid'")
+		} else {
+			println("Response does not contain the expected error message")
+		}

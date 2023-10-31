@@ -147,7 +147,7 @@ class AddAItemSteps {
 
 	@Then("The added item would be displayed")
 	def addedItemDisplayed() {
-		Mobile.checkElement(findTestObject('Item/txt_name_tc04'), 0)
+		Mobile.checkElement(findTestObject('Item/txt_your_groceries'), 0)
 	}
 
 	////////////TC05
@@ -170,7 +170,7 @@ class AddAItemSteps {
 
 	@Then("The added item would be showed")
 	def addedItemShowed() {
-		Mobile.checkElement(findTestObject('Item/btn_plus(add)'), 0)
+		Mobile.checkElement(findTestObject('Item/txt_your_groceries'), 0)
 	}
 
 
@@ -195,7 +195,7 @@ class AddAItemSteps {
 
 	@Then("The added item would be appeared")
 	def addedItemAppeared() {
-		Mobile.checkElement(findTestObject('Item/btn_plus(add)'), 0)
+		Mobile.checkElement(findTestObject('Item/txt_your_groceries'), 0)
 	}
 
 	////////////TC07
@@ -287,7 +287,7 @@ class AddAItemSteps {
 
 	@Then("The new item should be displayed")
 	def newItemDisplayed() {
-		Mobile.verifyElementVisible(findTestObject('Item/txt_lala_grocery'), 0)
+		Mobile.verifyElementVisible(findTestObject('Item/txt_your_groceries'), 0)
 
 	}
 
